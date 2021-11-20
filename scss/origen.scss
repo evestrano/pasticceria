@@ -1,0 +1,63 @@
+$blanco: #ffffff;
+$marron: #704628;
+
+.backgroundTexto {
+  background-color: $blanco;
+}
+.padding {
+  padding: 100px 50px 100px 50px;
+}
+
+tr td {
+  text-align: center;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: #f2be99;
+  display: ruby-text-container;
+}
+
+p {
+  font-family: 'Karma', serif;
+  font-size: 20px;
+  line-height: 2;
+  font-weight: 50;
+  text-align: center;
+}
+
+footer {
+  font-size: 1em;
+  font-family: 'Satisfy', cursive;
+  line-height: 2;
+  font-weight: 50;
+  text-align: center;
+}
+
+@for $i from 1 through 6 {
+  h#{$i} {
+    font-size: 10em / $i;
+    font-family: 'Satisfy', cursive;
+    text-align: center;
+  }
+}
+
+@each $secciones in h1 h2 footer {
+  #{$secciones} {
+    color: $blanco;
+  }
+}
+
+$colores: (
+  facebook: #3a5795,
+  mail: #c25e30,
+  instagram: rgb(143, 52, 143),
+  youtube: red,
+);
+
+@each $name-color, $bgcolor in $colores {
+  .btn-#{$name-color} {
+    background-color: $bgcolor;
+    border: $bgcolor;
+  }
+}
+
+@import 'bs_scss/scss/bootstrap.scss';

@@ -1,0 +1,287 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+.espacios {
+  padding: 20px;
+}
+
+/*Fondos*/
+.imagenFondo {
+  background-image: url(../img/fondo2.jpg);
+  background-position: center;
+  height: 1800px;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* Títulos y Copyright*/
+
+.backgroundBrown {
+  background-color: #704628;
+}
+.copyright {
+  color: #ffffff;
+  margin: auto;
+  width: auto;
+  background-color: gray;
+}
+
+legend {
+  text-align: center;
+}
+
+/* Degradados */
+.backgroundBlack {
+  background-image: linear-gradient(
+    to top,
+    rgb(90, 56, 5) 10%,
+    rgb(73, 46, 4) 90%
+  );
+}
+
+/*Fuentes*/
+header {
+  font-size: 2em;
+  font-family: 'Satisfy', cursive;
+  font-weight: 200;
+  line-height: 2;
+  text-align: center;
+  letter-spacing: 0mm;
+  text-decoration: none;
+  color: #704628;
+}
+.contact-form {
+  font-size: 25px;
+}
+
+.menu_bar {
+  display: none;
+}
+
+.tipografiaGrid {
+  font-family: 'Karma', serif;
+}
+/*menu bar*/
+
+.menu_bar {
+  display: block;
+  width: 100%;
+  background: #ccc;
+}
+
+/*Imagenes*/
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+}
+
+.fotoProducto {
+  padding: 20px;
+  width: 350px;
+  height: 450px;
+}
+.chef {
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  margin: 30px;
+  width: 900px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.centerFoto {
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+}
+
+/*Botones*/
+.boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*FORMULARIO CONTACTO*/
+
+.contacto {
+  width: 100%;
+  clear: both;
+  position: sticky;
+}
+
+.caja {
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+/*GRID*/
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 50px auto;
+  grid-template-rows: 50px;
+}
+
+.gridContainer div {
+  border: 1px solid black;
+  padding: 20px;
+}
+
+/* Animacion */
+
+.mensajeAnimado {
+  width: 70px;
+  height: 70px;
+  animation-name: mensajeAnimado;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-delay: 0;
+}
+
+.batidorAnimado {
+  width: 125px;
+  height: 155px;
+  animation-name: batidorAnimado;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+  animation-delay: 0;
+}
+
+/* KeyFrames */
+@keyframes mensajeAnimado {
+  0% {
+    transform: translateX(0);
+    border-radius: 90%;
+  }
+  50% {
+    border-radius: 60%;
+  }
+  70% {
+    transform: translateX(900px);
+  }
+  100% {
+    transform: translateX(0);
+    border-radius: 90%;
+  }
+}
+
+/* Transiciones */
+.trans {
+  transition: all 5s;
+}
+.trans:hover {
+  width: 950px;
+  height: 650px;
+}
+
+.transProducto {
+  transition: all 2s;
+}
+.transProducto:hover {
+  width: 450px;
+  height: 550px;
+}
+
+/*MEDIA QUERIES*/
+
+/*Mobile*/
+@media only screen and (max-width: 767px) {
+  .menu_bar {
+    display: block;
+    width: 100%;
+    background: #ccc;
+  }
+  .titulos {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  p {
+    font-size: 10px;
+  }
+  iframe {
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .chef {
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .trans {
+    transition: none;
+  }
+  .trans:hover {
+    width: 500px;
+    height: 400px;
+  }
+}
+
+/*Tablet*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .menu_bar {
+    display: block;
+    width: auto;
+    background: #ccc;
+  }
+  .titulos {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+  p {
+    font-size: 26px;
+  }
+  iframe {
+    width: 780px;
+    height: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .chef {
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .trans {
+    transition: none;
+  }
+  .trans:hover {
+    width: 700px;
+    height: 500px;
+  }
+}
+
+/*Desktop*/
+@media only screen and (min-width: 1024px) {
+  iframe {
+    width: 1080px;
+    height: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}

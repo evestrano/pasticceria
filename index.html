@@ -15,39 +15,54 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="bootstrap/js/bootstrap.js">
 </head>
-<nav class="navbar navbar-expand-lg navbar-light bg-light menu_bar">
-    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Productos
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="secciones/paquetes.html">Paquetes</a></li>
-            <li><a class="dropdown-item" href="secciones/tortas.html">Tortas</a></li>
-            <li><a class="dropdown-item" href="secciones/video.html">Video</a></li>
-            </ul>
-        </li> 
-    <li class="nav-item">
-        <a class="nav-link" href="secciones/compras.html">Cómo comprar</a>
-    </li>       
-    <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="secciones/contacto.html">Contacto</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="secciones/nosotros.html">Nosotros</a>
-    </li>
-    </ul>
-    <form class="d-flex">
-    <input class="form-control me-2" type="search" placeholder="Escribe aquí" aria-label="Search">
-    <button class="btn btn-outline-success" type="submit">Buscar</button>
-    </form>
-    </div> 
-</nav>
 <body class="imagenFondo">
     <div class="logo">
-        <img src="img/pasticceria2.png" class="img-fluid" alt="Pasticceria Arancione">
+      <img src="img/pasticceria2.png" class="img-fluid" alt="Pasticceria Arancione">
     </div>
-        <h1 class="titulos backgroundBrown " >Pasticceria Arancione</h1>
+    <h1 class="titulos backgroundBrown " >Pasticceria Arancione</h1>
+    <nav class="navbar navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="secciones/tortas.html">❤️¡ENVIO GRATIS EN COMPRAS DE $5000 O MÀS!❤️</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <p class="offcanvas-title" id="offcanvasNavbarLabel">Menú</p>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Productos</a>
+                  <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                    <li><a class="dropdown-item" href="secciones/paquetes.html">Paquetes</a></li>
+                    <li><a class="dropdown-item" href="secciones/tortas.html">Tortas</a></li>
+                    <li><a class="dropdown-item" href="secciones/video.html">Video</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="secciones/compras.html">Cómo comprar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="secciones/contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="secciones/nosotros.html">Nosotros</a>
+                  </li>  
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+    </nav>
     <div class="container espacios">
         <div class="row">
             <div class="col-sm-12">
@@ -71,23 +86,22 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Siguiente</span>
         </button>
-        <div class="espacios"></div>
     </div>
-            </div>
-        </div>
+      </div>
+      </div>
     </div>
-    <h2 class="titulos backgroundBrown">Pastelería Italiana</h2>
-    <p class="backgroundTexto padding">
-        Dicen que comer es una necesidad, pero cocinar es un arte.<br>
-        La pastelería Italiana reúne las técnicas, recetas y los valores que conforman la rica y diversa tradición en producción de pasteles y postres italianos.<br>
-        Los más tradicionales son: la sfogliatelle, el strufolli y el cannoli, este último, originado en Sicilia y con la influencia árabe del mazapán, se ha convertido en una bandera de la pastelería italiana.<br>
-        <mark>Esperamos que disfrutes de nuestros productos!</mark><br><br>
-        <img class="animate__animated animate__swing batidorAnimado" src="./img/batidor.jpg">
-    </p>
-    <footer>
-        <address class="copyright backgroundBlack">Copyright © 2021 Pasticceria Arancione. Todos los derechos reservados.</address>
-    </footer>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-</body>
-</html>
+        <h2 class="titulos backgroundBrown">Pastelería Italiana</h2>
+        <p class="backgroundTexto espacios">
+          Dicen que comer es una necesidad, pero cocinar es un arte.<br>
+          La pastelería Italiana reúne las técnicas, recetas y los valores que conforman la rica y diversa tradición en producción de pasteles y postres italianos.<br>
+          Los más tradicionales son: la sfogliatelle, el strufolli y el cannoli, este último, originado en Sicilia y con la influencia árabe del mazapán, se ha convertido en una bandera de la pastelería italiana.<br>
+          <mark>Esperamos que disfrutes de nuestros productos!</mark><br><br>
+          <img class="animate__animated animate__swing batidorAnimado" src="./img/batidor.jpg">
+        </p>
+        <footer>
+            <address class="copyright backgroundBlack">Copyright © 2021 Pasticceria Arancione. Todos los derechos reservados.</address>
+        </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    </body>
+    </html>

@@ -71,7 +71,8 @@ header {
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
-  padding-top: 56px; }
+  padding-top: 20px; 
+  padding-bottom: 20px; }
 
 .fotoProducto {
   padding: 20px;
